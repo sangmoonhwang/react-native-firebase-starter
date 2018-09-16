@@ -1,24 +1,26 @@
-import React, { Component } from 'react';
-import { TextInput, View } from 'react-native';
-import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import {TextInput} from 'react-native';
 import styles from './TextArea.component.style';
 
 class TextArea extends Component {
-  static propTypes = {
-    text: PropTypes.string,
-    onTextChange: PropTypes.func
+  state = {
+    text: ''
   }
+  setText = (text) => this.setState({text})
   render () {
-    const {text, onTextChange, ...extraProps} = this.props;
+    const {...extraProps} = this.props;
+    const alignTextTop = {textAlignVertical: 'top'};
     return (
       <TextInput
         {...extraProps}
-        style={[styles.textArea, {textAlignVertical: 'top'}, extraProps.style]}
+        style={[styles.textArea, alignTextTop, extraProps.style]}
         multiline = {true}
-        onChangeText={onTextChange}
-        value={text}
+        onChangeText={this.setText}
+        value={this.state.text}
+        underlineColorAndroid={'transparent'}
       />
     );
   }
 }
+
 export default TextArea;

@@ -1,14 +1,30 @@
 import React, {Component} from 'react';
-import Home from './pages/Home.page';
+import Router from './routes';
 import {connect} from 'react-redux';
+import Proptypes from 'prop-types';
 
-class Angmotti extends Component {
+class App extends Component {
   render () {
-    console.log(this.props.state); // eslint-disable-line
+    const {dispatch, nav, userPreferences} = this.props;
     return (
-      <Home />
+      <Router screenProps={userPreferences} />
     );
   }
 }
 
-export default connect(null, null)(Angmotti);
+App.propTypes = {
+  dispatch: Proptypes.func,
+  nav: Proptypes.object,
+  userPreferences: Proptypes.object
+};
+
+const mapStateToProps = ({nav, userPreferences}) => ({
+  nav,
+  userPreferences
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  dispatch
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

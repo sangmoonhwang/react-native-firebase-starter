@@ -15,7 +15,8 @@
     "ios": "react-native run-ios",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "ang": "react-native link react-native-i18n"
   },
   "jest": {
     "preset": "react-native"
@@ -25,6 +26,12 @@
     "react": "^16.3.2",
     "react-native": "^0.55.3",
     "react-native-firebase": "^4.3.6",
+    "react-native-i18n": "^2.0.15",
+    "react-native-modal-overlay": "^1.2.3",
+    "react-native-platform-touchable": "^1.1.1",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.14.2",
+    "react-navigation-redux-helpers": "^2.0.5",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-actions": "^2.6.1",

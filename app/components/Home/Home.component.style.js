@@ -10,7 +10,24 @@ export default StyleSheet.create({
     justifyContent: 'space-between'
   },
   titleHeading: {
-    ...headingText
+    ...headingText,
+  },
+  changeLanguageText: {
+    ...headingText,
+    alignSelf: 'center',
+    padding: 0,
+  },
+  changeLanguage: {
+    elevation: 2,
+    position: 'absolute',
+    backgroundColor: theme.BACKGROUND_COLOR_LIGHT,
+    padding: 10,
+    borderRadius: 5,
+    top: 15,
+    width: 40,
+    right: 10,
+    borderWidth: 1,
+    borderColor: theme.BORDER_COLOR_LIGHT
   },
   titleTextInput: {
     ...textInput
@@ -22,7 +39,10 @@ export default StyleSheet.create({
   },
   textArea: {
     ...textInput,
-    flex: 1
+    flex: 1,
+    textAlignVertical: 'top',
+    fontSize: theme.FONT_SIZE_MEDIUM,
+    fontWeight: theme.FONT_WEIGHT_LIGHT
   },
   bottomBar: {
     flexDirection: 'row',
@@ -40,5 +60,13 @@ export default StyleSheet.create({
   characterCount: {
     padding: 10,
     fontSize: theme.FONT_SIZE_SMALL
+  },
+  aboutUsWrapper: {
+    padding: 15,
+    alignItems: 'center',
+    backgroundColor: 'white'
+  },
+  aboutUs: {
+    fontWeight: theme.FONT_WEIGHT_BOLD
   }
 });
