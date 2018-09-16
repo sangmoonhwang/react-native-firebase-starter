@@ -1,7 +1,15 @@
 import React from 'react';
 import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
+import Home from './app/components/Home/Home.component';
 
 import firebase from 'react-native-firebase';
+
+import {initStore} from './app/redux/store';
+import {Provider} from 'react-redux';
+
+import Angmotti from './app/Angmotti';
+
+const store = initStore();
 
 export default class App extends React.Component {
   constructor() {
@@ -14,10 +22,18 @@ export default class App extends React.Component {
   componentDidMount() {
     // firebase things?
   }
-
+  render () {
+    return (
+      <Provider store={store}>
+        <Angmotti />
+      </Provider>
+    );
+  }
+/*
   render() {
     return (
       <ScrollView>
+        <Home />
         <View style={styles.container}>
           <Image source={require('./assets/RNFirebase.png')} style={[styles.logo]}/>
           <Text style={styles.welcome}>
@@ -59,6 +75,7 @@ export default class App extends React.Component {
       </ScrollView>
     );
   }
+  */
 }
 
 const styles = StyleSheet.create({

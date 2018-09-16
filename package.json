@@ -1,5 +1,5 @@
 {
-  "name": "RNFirebaseStarter",
+  "name": "angmotti",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -24,6 +24,11 @@
     "fbjs": "^0.8.17",
     "react": "^16.3.2",
     "react-native": "^0.55.3",
-    "react-native-firebase": "^4.3.6"
+    "react-native-firebase": "^4.3.6",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
   }
 }

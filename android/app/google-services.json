@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "110003709166",
+    "firebase_url": "https://angmotti-31f6d.firebaseio.com",
+    "project_id": "angmotti-31f6d",
+    "storage_bucket": "angmotti-31f6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110003709166:android:c5c3575c76dc9512",
+        "android_client_info": {
+          "package_name": "com.angmotti.angmotti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110003709166-blb1osscg5pddpi0lqg828ig3lnu6tds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ufzwPnpl2lL-jDc_j8plEscWBKYJa90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
